@@ -3,4 +3,9 @@ body
 	color: #FCFFF7;
 	background: #7FB800;
 	text-align: center;
+	font-family: Sanskrit;
+}
+header
+{
+	font-family: Futura;
 }
