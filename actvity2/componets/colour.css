@@ -6,14 +6,12 @@ header
 }
 body
 {
-	text-align: center;
 	background: #3C3744;
 	color: #EEE5E9;
 	margin-bottom: 80px;
 }
 p
 {
-	text-allgin: left;
 	margin-left: 100px;
 	margin-bottom: 50px;
 }
