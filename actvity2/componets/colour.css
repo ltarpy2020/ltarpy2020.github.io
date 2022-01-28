@@ -2,6 +2,7 @@ header
 {
 	color: #EDE6F2;
 	margin-bottom: 80px;
+	font-size: 30px;
 }
 body
 {
@@ -9,12 +10,14 @@ body
 	background: #6C809A;
 	color: #EDE6F2;
 	margin-bottom: 80px;
+	font-size: 30px;
 }
 p
 {
 	text-align: left;
 	margin-left: 500px;
 	margin-bottom: 50px;
+	font-size: 30px;
 }
 table
 {
