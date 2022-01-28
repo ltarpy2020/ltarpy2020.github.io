@@ -1,13 +1,14 @@
 header
 {
 	background: ##3C3744;
-	color: white;
+	color: #EEE5E9;
+	margin-left: 10px;
 }
 body
 {
 	text-align: center;
 	background: #3C3744;
-	color: white;
+	color: #EEE5E9;
 }
 p
 {
