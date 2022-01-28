@@ -2,7 +2,6 @@ header
 {
 	background: ##3C3744;
 	color: #EEE5E9;
-	margin-left: 50px;
 }
 body
 {
@@ -12,7 +11,7 @@ body
 }
 p
 {
-	margin-left: 80px;
+	margin-left: 50px;
 }
 table
 {
