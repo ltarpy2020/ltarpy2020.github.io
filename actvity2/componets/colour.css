@@ -3,3 +3,11 @@ body
 	background: #40434E;
 	color: #F1DEDE;
 }
+table
+{
+	border: 1px solid black
+}
+td
+{
+	border: 1px solid black
+}
