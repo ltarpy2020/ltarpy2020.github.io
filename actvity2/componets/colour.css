@@ -3,6 +3,7 @@ header
 	background: ##3C3744;
 	color: #EEE5E9;
 	margin-bottom: 80px;
+	text-allgin: center;
 }
 body
 {
@@ -12,7 +13,7 @@ body
 }
 p
 {
-	margin-left: 100px;
+	margin-left: 300px;
 	margin-bottom: 50px;
 }
 table
