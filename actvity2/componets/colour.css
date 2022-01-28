@@ -2,16 +2,19 @@ header
 {
 	background: ##3C3744;
 	color: #EEE5E9;
+	margin-bottom: 80px;
 }
 body
 {
 	text-align: center;
 	background: #3C3744;
 	color: #EEE5E9;
+	margin-bottom: 80px;
 }
 p
 {
 	margin-left: 50px;
+	margin-bottom: 50px;
 }
 table
 {
