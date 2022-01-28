@@ -3,17 +3,17 @@ header
 	background: ##3C3744;
 	color: #EEE5E9;
 	margin-bottom: 80px;
-	text-allgin: center;
 }
 body
 {
+	text-allgin: center;
 	background: #3C3744;
 	color: #EEE5E9;
 	margin-bottom: 80px;
 }
 p
 {
-	margin-left: 300px;
+	text-align: left;
 	margin-bottom: 50px;
 }
 table
