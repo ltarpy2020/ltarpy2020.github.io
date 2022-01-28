@@ -8,6 +8,10 @@ body
 	color: #F1DEDE;
 	text-align: center;
 }
+p
+{
+	margin-left: 80px;
+}
 table
 {
 	border: 1px solid white
@@ -15,6 +19,7 @@ table
 td
 {
 	border: 1px solid white
+	background: #090C9B;
 }
 footer
 {
