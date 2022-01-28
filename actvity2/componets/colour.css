@@ -1,8 +1,12 @@
+header
+{
+	color: #FB4D3D;
+}
 body
 {
 	background: #40434E;
 	color: #F1DEDE;
-	text-allign: center;
+	text-align: center;
 }
 table
 {
