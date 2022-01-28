@@ -2,7 +2,7 @@ header
 {
 	color: #FB4D3D;
 }
-body
+p, h1
 {
 	background: #40434E;
 	color: #F1DEDE;
@@ -15,11 +15,11 @@ p
 table
 {
 	border: 1px solid white
+	background: #090C9B;
 }
 td
 {
 	border: 1px solid white
-	background: #090C9B;
 }
 footer
 {
