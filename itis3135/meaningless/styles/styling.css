@@ -8,9 +8,7 @@ h1
   font-family: Mistral;
   font-size: 75px;
   margin-left: 68px;
-  margin-right: 156px;
   color: #A1C6EA;
-  border-bottom: 140px solid greenyellow
 }
 tr
 {
@@ -24,4 +22,9 @@ td
 h3
 {
   text-align: center;
+}
+h4
+{
+   border-bottom: 140px solid greenyellow
+   margin-left: 134px;
 }
