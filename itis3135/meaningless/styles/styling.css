@@ -3,15 +3,12 @@ header
   background: #B49A67;
   text-align: right;
 }
-h2
-{
-  color: #A1C6EA;
-}
 h1
 {
   font-family: Mistral;
   font-size: 75px;
   margin-left: 28px;
+  color: #A1C6EA;
 }
 tr
 {
