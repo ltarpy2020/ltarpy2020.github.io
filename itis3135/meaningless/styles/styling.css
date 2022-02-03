@@ -9,7 +9,7 @@ h1
   font-size: 75px;
   margin-left: 68px;
   color: #A1C6EA;
-  background: #0ACDFF;
+  background: #042A2B;
 }
 tr
 {
@@ -30,4 +30,8 @@ h4
   margin-left: 134px;
   margin-top: -60px;
   margin-right: 78px;
+}
+body:
+{
+  background: #F5EFFF;
 }
