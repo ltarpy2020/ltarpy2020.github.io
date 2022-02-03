@@ -2,3 +2,12 @@ h2
 {
   color: #A1C6EA;
 }
+tr
+{
+  background: #613F75;
+  border: 5px;
+}
+td
+{
+  border: 10px;
+}
