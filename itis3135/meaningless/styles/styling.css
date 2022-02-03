@@ -2,7 +2,6 @@ header
 {
   background: #B49A67;
   text-align: right;
-  border-bottom: 50px solid black
 }
 h1
 {
@@ -10,6 +9,7 @@ h1
   font-size: 75px;
   margin-left: 28px;
   color: #A1C6EA;
+  border-bottom: 50px solid black
 }
 tr
 {
