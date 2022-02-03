@@ -7,8 +7,10 @@ h1
 {
   font-family: Mistral;
   font-size: 75px;
-  margin-left: 28px;
+  margin-left: 68px;
+  margin-right: 128px;
   color: #A1C6EA;
+  border-top: 50px solid black
 }
 tr
 {
@@ -22,8 +24,4 @@ td
 h3
 {
   text-align: center;
-}
-img
-{
-  border-top: 50px solid black
 }
