@@ -9,7 +9,6 @@ h1
   font-size: 75px;
   margin-left: 28px;
   color: #A1C6EA;
-  border-bottom: 50px solid black
 }
 tr
 {
@@ -23,4 +22,8 @@ td
 h3
 {
   text-align: center;
+}
+img
+{
+  border-top: 50px solid black
 }
