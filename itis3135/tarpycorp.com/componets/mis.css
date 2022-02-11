@@ -3,5 +3,10 @@ body
   background-color: #191308;
   color: #EAEAEA;
   text-align: center;
-  font-family: Tahoma;
+  font-family: Courier;
+  margin-bottom: 40px;
+}
+header
+{
+  margin-bottom: 40px;
 }
