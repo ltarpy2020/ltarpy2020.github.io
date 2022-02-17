@@ -18,6 +18,10 @@ nav
 {
 	background-color: #5AD2F4;
 	font-family: Sanskrit;
-	font-size: 40px;
+	font-size: 20px;
 	color: #63595C;
+}
+h2
+{
+	font-size: 30px;
 }
