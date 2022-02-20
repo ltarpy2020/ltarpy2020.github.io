@@ -1,3 +1,5 @@
+var sides;
+
 function getShape(sides)
 var text;
 var sideShape = prompt("How many sides would you like to enter (3-8)");
@@ -26,3 +28,21 @@ switch(sides)
     function(sides);
     break;
 }
+
+function validateEntry(sides)
+{
+  if(isNaN(sides))
+  {
+    sides = alert("Enter a valid number");
+  }
+  
+  if (sides % 1 != 0)
+  {
+    sides = Math.round(sides)
+    return sides;
+  }
+  else if (sides < 0)
+  {
+    sides = Math.abs(sides)
+    return sides;
+  }
