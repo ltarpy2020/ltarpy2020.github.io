@@ -1,7 +1,7 @@
-function getShape(sideShape)
+function getShape(sides)
 var text;
 var sideShape = prompt("How many sides would you like to enter (3-8)");
-switch(sideShape)
+switch(sides)
 {
   case 3:
     alert(text = "triangle");
@@ -23,6 +23,6 @@ switch(sideShape)
     break;
   default:
     alert(text = "Enter a number 3-8");
-    function(sideShape);
+    function(sides);
     break;
 }
