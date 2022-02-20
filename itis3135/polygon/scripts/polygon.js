@@ -1,4 +1,4 @@
-function getShape(sides)
+function getShape()
 {
 
   var text;
@@ -29,7 +29,7 @@ function getShape(sides)
   }
 }
 
-  function validateEntry(sides)
+  function validateEntry()
   {
     if(isNaN(sides))
     {
