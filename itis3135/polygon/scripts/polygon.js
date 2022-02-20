@@ -3,7 +3,6 @@ function getShape()
 
   var text;
   let sides = prompt("How many sides would you like to enter (3-8)");
-  console.log(sides);
   switch(sides)
   {
     case 3:
