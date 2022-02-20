@@ -4,7 +4,7 @@ function getShape(sides)
 {
 
   var text;
-  var sideShape = prompt("How many sides would you like to enter (3-8)");
+  var sides = prompt("How many sides would you like to enter (3-8)");
   switch(sides)
   {
     case 3:
