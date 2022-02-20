@@ -1,5 +1,3 @@
-var sides;
-
 function getShape(sides)
 {
 
