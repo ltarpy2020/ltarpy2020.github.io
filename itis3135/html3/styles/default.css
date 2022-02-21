@@ -8,21 +8,17 @@ body
 header
 {
 	font-family: Futura;
-	background-color: #5AD2F4
 }
 h3
 {
 	margin-top: 60px;
 }
-nav
-{
-	background-color: #5AD2F4;
-	font-family: Sanskrit;
-	font-size: 20px;
-	color: #63595C;
-	margin-bottom: 60px;
-}
 h2
 {
 	font-size: 30px;
+}
+form
+{
+	background-color: #150578;
+	color: #F3E8EE;
 }
