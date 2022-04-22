@@ -8,7 +8,8 @@ body
 header
 {
 	font-family: Futura;
-	background-color: #5AD2F4;
+	//background-color: #5AD2F4;
+	background-color: #8AF3FF;
 }
 h3
 {
@@ -16,7 +17,7 @@ h3
 }
 nav
 {
-	background-color: #5AD2F4;
+	background-color: #8AF3FF;
 	font-family: Sanskrit;
 	font-size: 20px;
 	color: #63595C;
