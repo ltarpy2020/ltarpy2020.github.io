@@ -1,6 +1,6 @@
 function getSides(num)
 {
-	//var num = prompt("Enter the number of sides");
+	var num = prompt("Enter the number of sides");
   
   num = validateEntry(num);
   
