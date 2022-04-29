@@ -1,3 +1,4 @@
+window.onload = getSides();
 function getSides()
 {
 	var num = prompt("We'd like you to enter a number 3-8 to see what polygon you get!");
