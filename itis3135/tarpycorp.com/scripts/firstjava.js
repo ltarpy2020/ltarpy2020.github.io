@@ -89,3 +89,11 @@ function insulting()
   }
 }
 document.getElementById('insult').addEventListener('click', insulting);
+
+function randoAsHeck()
+{
+  let x = 0;
+  x = Math.floor(Math.random() * 101);
+  document.getElementById('ra').innerHTML = "Youre random number is: " + x;
+}
+document.getElementById('rando').addEventListener('click', randoAsHeck);
