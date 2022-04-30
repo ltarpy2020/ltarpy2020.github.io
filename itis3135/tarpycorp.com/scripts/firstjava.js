@@ -1,17 +1,16 @@
-
 function headsOrTails()
 {
-  let headsOrTails = 0;
+  let doIt = 0;
   let computer = 0;
   computer = Math.floor(Math.random() * 2);
-  headsOrTails = Math.floor(Math.random() * 2);
-  if (computer === headsOrTails)
+  heads = Math.floor(Math.random() * 2);
+  if (computer === doIt)
   {
-    document.getElementById('result').innerHTML = 'win';
+    document.getElementById('result').innerHTML = 'Do it';
   }
-  else if (computer != headsOrTails)
+  else if (computer != doIt)
   {
-    document.getElementById('result').innerHTML = 'lose';
+    document.getElementById('result').innerHTML = 'Dont do it';
   }
 }
 document.getElementById('go').addEventListener('click', headsOrTails);
