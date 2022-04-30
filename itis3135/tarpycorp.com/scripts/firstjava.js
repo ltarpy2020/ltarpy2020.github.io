@@ -52,4 +52,5 @@ function rps()
       document.getElementById('rocks').innerHTML = 'User chooses paper and loses';
     }
   }
+  }
 document.getElementById('paper').addEventListener('click', rps);
