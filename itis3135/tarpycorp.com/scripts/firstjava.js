@@ -12,8 +12,8 @@ function headsOrTails()
   {
     document.getElementById('result').innerHTML = 'Dont do it';
   }
+  document.getElementById('go').addEventListener('click', headsOrTails);
 }
-document.getElementById('go').addEventListener('click', headsOrTails);
 
 function rps()
 {
@@ -51,5 +51,5 @@ function rps()
     {
       document.getElementById('rocks').innerHTML = 'User chooses paper and loses';
     }
+    document.getElementById('go').addEventListener('click', rps);
   }
-  document.getElementById('go').addEventListener('click', rps);
