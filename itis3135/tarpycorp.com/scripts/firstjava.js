@@ -63,3 +63,29 @@ document.getElementById('paper').addEventListener('click', rps);
     count += 1;
     button.innerHTML = "Number of Clicks: " + count;
   };
+
+function insulting()
+{
+  let x = 0;
+  x = Math.floor(Math.random() * 5);
+  
+  switch (x)
+  {
+    case 0:
+      document.getElementById('insulter').innerHTML = 'Youre football team is trash';
+      break;
+    case 1:
+      document.getElementById('insulter').innerHTML = 'You need a new shirt';
+      break;
+    case 2:
+      document.getElementById('insulter').innerHTML = 'Stop playing too many video games';
+      break;
+    case 3:
+      document.getElementById('insulter').innerHTML = 'Quit sleeping in';
+      break;
+    case 4:
+      document.getElementById('insulter').innerHTML = 'Youre shoes look weird';
+      break;
+  }
+}
+document.getElementById('insult').addEventListener('click', insulting);
