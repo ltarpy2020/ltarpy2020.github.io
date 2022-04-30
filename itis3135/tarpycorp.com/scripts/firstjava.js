@@ -57,12 +57,12 @@ document.getElementById('paper').addEventListener('click', rps);
 
 function numOfClicks()
 {
-  var button = document.getElementById('clickme');
-  var count = 0;
-  button.onClick = function()
+  var button = document.getElementById("clickme"),
+    count = 0;
+  button.onclick = function() 
   {
     count += 1;
-    button.innerHTML = "Clicks : " + count;
+    button.innerHTML = "Click me: " + count;
   };
 }
 document.getElementById('clicks').addEventListener('click', headsOrTails);
