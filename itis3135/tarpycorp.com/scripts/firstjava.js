@@ -65,4 +65,4 @@ function numOfClicks()
     button.innerHTML = "Click me: " + count;
   };
 }
-document.getElementById('clicks').addEventListener('click', headsOrTails);
+document.getElementById('clicks').addEventListener('click', numOfClicks);
