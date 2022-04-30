@@ -55,8 +55,7 @@ function rps()
   }
 document.getElementById('paper').addEventListener('click', rps);
 
-function numOfClicks()
-{
+
   var button = document.getElementById("clickme"),
     count = 0;
   button.onclick = function() 
@@ -64,5 +63,3 @@ function numOfClicks()
     count += 1;
     button.innerHTML = "Click me: " + count;
   };
-}
-document.getElementById('clicks').addEventListener('click', numOfClicks);
