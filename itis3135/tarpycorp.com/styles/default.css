@@ -11,6 +11,10 @@ header
 	background-color: #8AF3FF;
 	color: #14080E;
 }
+h2
+{
+	background-color: #86A397;
+}
 h3
 {
 	margin-top: 60px;
@@ -34,5 +38,4 @@ footer
 div
 {
 	margin-bottom: 50px;
-	background-color: #86A397;
 }
