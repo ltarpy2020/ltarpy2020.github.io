@@ -1,12 +1,17 @@
-window.onload = getDateAndTime();
-function getDateAndTime()
+
+function headsOrTails()
 {
-  const date = new Date();
-
-  const x = date.toDateString();
-
-  const time = date.toLocaleTimeString();
-
-  console.log("date: " + x);
-  console.log("time: "+ time);
+  let headsOrTails = 0;
+  let computer = 0;
+  let wins = 0;
+  computer = Math.floor(Math.random() * 2);
+  headsOrTails = Math.floor(Math.random() * 2);
+  if (computer === headsOrTails)
+  {
+    wins = "win";
+  }
+  else if (computer != headsOrTails)
+  {
+    wins = "lose"
+  }
 }
