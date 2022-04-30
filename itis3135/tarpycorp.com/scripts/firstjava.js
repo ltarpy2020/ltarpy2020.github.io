@@ -59,7 +59,7 @@ function numOfClicks()
 {
   var button = document.getElementById('click');
   var count = 0;
-  button onClick = function()
+  button.onClick = function()
   {
     count += 1;
     button.innerHTML = "Clicks : " + count
