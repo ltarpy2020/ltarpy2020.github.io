@@ -56,10 +56,10 @@ function rps()
 document.getElementById('paper').addEventListener('click', rps);
 
 
-  var button = document.getElementById("clickme"),
-    count = 0;
+  var button = document.getElementById("clicker")
+  var count = 0;
   button.onclick = function() 
   {
     count += 1;
-    button.innerHTML = "Click me: " + count;
+    button.innerHTML = "Number of Clicks: " + count;
   };
