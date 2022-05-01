@@ -34,4 +34,5 @@ function displayed()
     document.getElementById('re').innerHTML = people;
     document.getElementById('result').innerHTML = x;
   }
+}
     
