@@ -26,4 +26,12 @@ a.addEventListener('click', function()
     x.push(s);
   }
 });
+
+function displayed()
+{
+  for (let i = 0; i < people.length(); i++)
+  {
+    document.getElementById('re').innerHTML = people;
+    document.getElementById('result').innerHTML = x;
+  }
     
