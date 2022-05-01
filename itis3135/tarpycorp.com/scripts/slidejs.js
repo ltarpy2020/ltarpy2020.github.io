@@ -1,6 +1,11 @@
 let sli = 1;
 showSlides(sli);
 
+function plusSlides(x)
+{
+  showSlides(sli += x);
+}
+
 function currentSlide(x)
 {
   showSlides(sli = x)
