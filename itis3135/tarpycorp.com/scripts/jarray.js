@@ -42,6 +42,3 @@ function displayed()
       t.deleteRow(i - 1);
     }
   }
-
-document.getElementById('re').innerHTML = people;
-document.getElementById('result').innerHTML = x;
