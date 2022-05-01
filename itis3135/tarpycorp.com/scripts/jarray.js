@@ -2,12 +2,11 @@ let employees = document.getElementById('ename');
 let s = document.getElementById('salary');
 let a = document.getElementById('add');
 let d = document.getElementById('display');
-let t = document.getElementById('tables');
+let people = [];
+let x = [];
 
 a.addEventListener('click', function()
 {
-  let people = [];
-  let x = [];
 
   if (employees.value === "" || s.value === "")
   {
@@ -30,6 +29,15 @@ a.addEventListener('click', function()
 
 d.addEventListener('click', function()
 {
-  document.getElementById('re').innerHTML = people;
-  document.getElementById('result').innerHTML = x;
+const it = people.values();
+const j = x.values();
+
+for (let letter of it)
+{
+  document.getElementById('re').innerHTML = letter;
+}
+for (let y of j)
+{
+  document.getElementById('result').innerHTML = j;
+}
 });
