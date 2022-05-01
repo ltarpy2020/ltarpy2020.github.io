@@ -1,8 +1,29 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+let employees = document.getElementById('ename');
+let s = document.getElementById('salary');
+let a = document.getElementById('add');
+let d = document.getElementById('display');
 
-\f0\fs24 \cf0 js}
+a.addEventListener('click', function()
+{
+  let people = [];
+  let x = [];
+
+  if (employees.value === "" || s.value === "")
+  {
+    alert("Please enter data into text boxes");
+  }
+  else if (isNaN(s.value))
+  {
+    alert("Please enter a number here");
+  }
+  else if (s.value < 5000)
+  {
+    alert("Please enter a number greater than 5000");
+  }
+  else
+  {
+    people.push(employees);
+    x.push(s);
+  }
+});
+    
