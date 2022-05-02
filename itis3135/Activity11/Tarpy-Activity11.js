@@ -1,4 +1,10 @@
 <!-- jQuery call to the accordion() method. -->
 $(document).ready(function() {
-    $("#tabs").tabs();
+    $("#accordian").accordian(
+        {
+            collapsible: true,
+            active: false,
+            heightstyle: content;
+        }
+    );
 });
