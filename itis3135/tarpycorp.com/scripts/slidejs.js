@@ -1,33 +1,28 @@
-let sli = 1;
-showSlides(sli);
+let n = document.getElementById('next');
+let p = document.getElementById('previous');
+let p1 = document.getElementById('mySlides1');
+let p2 = document.getElementById('mySlides2');
+let p3 = document.getElementById('mySlides3');
+let p4 = document.getElementById('mySlides4');
 
-function plusSlides(x)
+n.addEventListener('click', function()
 {
-  showSlides(sli += x);
-}
-
-function currentSlide(x)
-{
-  showSlides(sli = x)
-}
-
-function showSlides(x)
-{
-  let i = 0;
-  let slides = document.getElementsByClassName('mySlides');
-  let d = document.getElementsByClassName('dot');
-  if (n > slides.length)
+	for (let i = 0; i < 4; i++)
   {
-    sli = 1;
+  	switch (i)
+    {
+    	case 0:
+      	p1.style.visibility = "visible";
+        break;
+      case 1:
+        p2.style.visibility = "visible";
+        break;
+        case 2:
+        p3.style.visibility = "visible";
+        break;
+        case 3:
+        p4.style.visibility = "visible";
+        break;
+    }
   }
-  if (n < 1)
-  {
-    sli = sides.length
-  }
-  for (i = 0; i < d.length; i++)
-  {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }  
-  slides[sli-1].style.display = "block";
-  d[sli-1].className += " active";
-}
+});
