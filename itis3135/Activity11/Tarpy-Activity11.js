@@ -4,7 +4,7 @@ $(document).ready(function() {
         {
             collapsible: true,
             active: false,
-            heightstyle: content;
+            heightstyle: "content";
         }
     );
 })
