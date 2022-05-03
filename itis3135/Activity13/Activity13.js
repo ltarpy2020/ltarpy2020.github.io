@@ -11,7 +11,7 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
-            $("#team").html("");
+            $("#teammembers").html("");
             $(data).find("management").children().each(function() {
                 var xmlDoc = $(this);
                 $("#team").append
