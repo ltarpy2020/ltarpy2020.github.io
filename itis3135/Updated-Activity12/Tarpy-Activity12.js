@@ -5,7 +5,7 @@ $(document).ready(function() {
         maxSlides: 1,
         slideWidth: 500,
         slideMargin: 20,
-        caption: true,
+        captions: true,
         speed: 3000,
         pageSelector: "#id_pager",
     });
