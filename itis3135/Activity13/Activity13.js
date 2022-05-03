@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.ajax({
         type: "get",
-        url: "team.json",
+        url: "team.xml",
         beforeSend: function() {
             $("#team").html("Loading...");
         },
@@ -9,7 +9,7 @@ $(document).ready(function() {
         error: function(xhr, status, error) {
             alert("Error: " + xhr.status + " - " + error);
         },
-        dataType: "json",
+        dataType: "xml",
         success: function(data) {
             $("#teammembers").html("");
             $(data).find("management").children().each(function() {
