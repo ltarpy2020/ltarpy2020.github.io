@@ -22,3 +22,9 @@ li {
 p {
 	padding-bottom: .5em;
 }
+#heading 
+{
+	width: 100%;
+	border-bottom: 1px solid grey;
+	margin-bottom: 15px;
+}
