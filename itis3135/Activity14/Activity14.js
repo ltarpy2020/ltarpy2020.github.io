@@ -4,19 +4,19 @@ $(document).ready(function() {
 	let c = document.getElementById('chua');
 	let s = document.getElementById('sampson');
 	
-	t.addEventListener('click', function()
+	t.addEventListener('click', function(data)
 	{
 		$.getJSON('json_files/toobin.json');
 	});
-	o.addEventListener('click', function()
+	o.addEventListener('click', function(data)
 	{
 		$.getJSON('json_files/sorkin.json');
 	});
-	c.addEventListener('click', function()
+	c.addEventListener('click', function(data)
 	{
 		$.getJSON('json_files/chua.json');
 	});
-	s.addEventListener('click', function()
+	s.addEventListener('click', function(data)
 	{
 		$.getJSON('json_files/sampson.json');
 	});
