@@ -6,7 +6,12 @@ $(document).ready(function() {
 	
 	t.addEventListener('click', function()
 	{
-		$.getJSON('json_files/toobin.json');
+		fetch('json_files/toobin.json')
+		.then(response => response.json()
+		      .then(data =>
+		{
+			document.getElementById('result').innerHTML = data.sentence;
+		}
 	});
 	o.addEventListener('click', function()
 	{
