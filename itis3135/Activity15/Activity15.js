@@ -1,14 +1,11 @@
 $(document).ready(function()
 {
-   $.getJSON('facultyList.json')
-   
   let fImage = $("<img>");
   let fName = $("<h2>");
   let fSection = $("<h3>");
   let fBio = $("<p>");
-  
-  this.function(data)
-  {
+   $.getJSON('facultyList.json', function(data)
+{
     $.each(data, function()
     {
       $.each(this, function()
@@ -19,5 +16,5 @@ $(document).ready(function()
         $("#faculty").append(fBio);
       })
     })
-  }
+ });
 });
