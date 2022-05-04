@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function() 
+{
 	let t = document.getElementById('toobin');
 	let o = document.getElementById('sorkin');
 	let c = document.getElementById('chua');
@@ -7,11 +8,11 @@ $(document).ready(function() {
 	t.addEventListener('click', function()
 	{
 		fetch('json_files/toobin.json')
-		.then(response => response.json()
+		.then(response => response.json())
 		      .then(data =>
 		{
 			document.getElementById('result').innerHTML = data.sentence;
-		}
+		})
 	});
 	o.addEventListener('click', function()
 	{
@@ -25,6 +26,4 @@ $(document).ready(function() {
 	{
 		$.getJSON('json_files/sampson.json');
 	});
-	
-	
-}); // end ready
+  });
