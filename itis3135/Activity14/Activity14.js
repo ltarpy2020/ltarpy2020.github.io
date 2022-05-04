@@ -16,14 +16,29 @@ $(document).ready(function()
 	});
 	o.addEventListener('click', function()
 	{
-		$.getJSON('json_files/sorkin.json');
+		fetch('json_files/toobin.json')
+		.then(response => response.json())
+		      .then(data =>
+		{
+			document.getElementById('result').innerHTML = data.sentence;
+		})
 	});
 	c.addEventListener('click', function()
 	{
-		$.getJSON('json_files/chua.json');
+		fetch('json_files/toobin.json')
+		.then(response => response.json())
+		      .then(data =>
+		{
+			document.getElementById('result').innerHTML = data.sentence;
+		})
 	});
 	s.addEventListener('click', function()
 	{
-		$.getJSON('json_files/sampson.json');
+		fetch('json_files/toobin.json')
+		.then(response => response.json())
+		      .then(data =>
+		{
+			document.getElementById('result').innerHTML = data.sentence;
+		})
 	});
   });
