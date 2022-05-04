@@ -11,7 +11,7 @@ $(document).ready(function()
 		.then(response => response.json())
 		      .then(data =>
 		{
-			document.getElementById('result').innerHTML = data.speakers;
+			document.getElementById('speakers').innerHTML = data.speakers;
 		})
 	});
 	o.addEventListener('click', function()
@@ -20,7 +20,7 @@ $(document).ready(function()
 		.then(response => response.json())
 		      .then(data =>
 		{
-			document.getElementById('result').innerHTML = data.speakers;
+			document.getElementById('speakers').innerHTML = data.speakers;
 		})
 	});
 	c.addEventListener('click', function()
@@ -29,7 +29,7 @@ $(document).ready(function()
 		.then(response => response.json())
 		      .then(data =>
 		{
-			document.getElementById('result').innerHTML = data.speakers;
+			document.getElementById('speakers').innerHTML = data.speakers;
 		})
 	});
 	s.addEventListener('click', function()
@@ -38,7 +38,7 @@ $(document).ready(function()
 		.then(response => response.json())
 		      .then(data =>
 		{
-			document.getElementById('result').innerHTML = data.speakers;
+			document.getElementById('speakers').innerHTML = data.speakers;
 		})
 	});
   });
