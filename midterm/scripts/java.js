@@ -16,3 +16,4 @@ function funFact()
       document.getElementById('response').innerHTML = "I love the NFL, but love college basketball more. NC State is my favorite team";
   }
 }
+document.getElementById('fact').addEventListener('click', funFact);
