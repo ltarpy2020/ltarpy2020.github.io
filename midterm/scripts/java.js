@@ -26,7 +26,7 @@ document.getElementById('fact').addEventListener('click', funFact);
 function randoAsHeck()
 {
   let x = 0;
-  x = Math.floor(Math.random() * 10);
+  x = Math.floor(Math.random() * 11);
   switch(x)
   {
     case 0:
