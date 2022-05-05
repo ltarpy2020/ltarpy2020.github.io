@@ -23,12 +23,3 @@ function funFact()
 }
 document.getElementById('fact').addEventListener('click', funFact);
 
-function switchPics()
-{
-  let s = document.getElementById('im');
-  let c = document.getElementById('cmc');
-  s.addEventListener('click', function()
-  {
-    c.style.visibility = "visibile";
-  });
-}
