@@ -22,3 +22,14 @@ function funFact()
   }
 }
 document.getElementById('fact').addEventListener('click', funFact);
+
+$(document).ready(function() {
+    $("#slides").bxSlider({
+        auto: true,
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 500,
+        slideMargin: 20,
+        speed: 3000,
+    });
+});
