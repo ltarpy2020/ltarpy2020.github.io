@@ -1,7 +1,7 @@
 function funFact()
 {
   let x = 0;
-  x = Math.floor(Math.random() * 5)
+  x = Math.floor(Math.random() * 5);
   switch(x)
   {
     case 0:
