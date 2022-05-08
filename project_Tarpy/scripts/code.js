@@ -5,15 +5,15 @@ function getData()
 	{
 	  	document.getElementById('result').innerHTML = "See Figures 1, 2 and 3 in Photo Gallery Below";
 	}
-	else if (input === "family" || "Family")
+	if (input === "family" || "Family")
 	{
 		document.getElementById('result').innerHTML = "See Figures 4 and 5 in Photo Gallery Below";
 	}
-	else if (input === "gallery" || "Gallery")
+	if (input === "gallery" || "Gallery")
 	{
 		document.getElementById('result').innerHTML = "See Figures 6 and 7 in Photo Gallery Below";
 	}
-	else if (input === "other" || "Other")
+	if (input === "other" || "Other")
 	{
 		document.getElementById('result').innerHTML = "See Figures 8 in Photo Gallery Below";
 	}
