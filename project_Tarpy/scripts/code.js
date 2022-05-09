@@ -1,4 +1,4 @@
-function datas()
+function fn1()
 {
 	var inputs = document.getElementById('look').value;
   
