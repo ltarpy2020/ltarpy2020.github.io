@@ -23,3 +23,12 @@ function fn1()
   	document.getElementById('result').innerHTML = "Please enter valid data";
   }
 }
+
+$(document).ready(function() 
+{
+    $("#accordion").accordion(
+        {
+            collapsible: true,
+            heightstyle: "content"
+        });
+})
