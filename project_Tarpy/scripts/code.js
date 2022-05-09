@@ -23,3 +23,17 @@ function fn1()
   	document.getElementById('result').innerHTML = "Please enter valid data";
   }
 }
+
+function ajaxCall()
+{
+	$.ajax(
+		{
+			"info.json"
+			type: "GET",
+			success: function(data)
+	{
+		var s = JSON.stringify(data);
+		document.getElementById('re').innerHTML = s;
+	}
+};
+}
