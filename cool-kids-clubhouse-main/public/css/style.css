@@ -1,0 +1,81 @@
+/*This is the style page where we will have all the CSS needed for both admin/clients*/
+/*This is for any header css*/
+.ckc-logo {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    
+}
+
+.header-background {
+    height: 20%;
+    width: 100%;
+    background-color: rgb(98, 25, 128);
+}
+
+.header-title {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: Verdana;
+}
+
+header nav{
+    text-align: right;
+    padding: 0px 20px;
+    color: white;
+    font-family: Verdana;
+}
+header nav a{
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+}
+
+/*This is for any footer css*/
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+.footer-logo {
+    height: 75px;
+    width: 100px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.footer-background {
+    height: 100px;
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    color: darkgreen;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
+
+/*Label what page this css is used for*/
