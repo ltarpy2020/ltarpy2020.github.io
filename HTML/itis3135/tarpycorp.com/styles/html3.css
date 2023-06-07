@@ -1,0 +1,32 @@
+body
+{
+	color: #0C120C;
+	background: lime;
+	text-align: center;
+	font-family: Sanskrit;
+}
+header
+{
+	font-family: Futura;
+}
+h3
+{
+	margin-top: 60px;
+}
+h2
+{
+	font-size: 30px;
+}
+form
+{
+	background-color: #63768D;
+	color: #F3E8EE;
+}
+button
+{
+	background-color: #2D2A32;
+	color: #F4E409;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}

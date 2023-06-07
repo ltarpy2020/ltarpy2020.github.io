@@ -1,0 +1,37 @@
+header
+{
+  background: #B49A67;
+  text-align: right;
+}
+h1
+{
+  font-family: Mistral;
+  font-size: 75px;
+  margin-left: 68px;
+  color: yellow;
+  background: #F7D6E0;
+}
+tr
+{
+  background: #613F75;
+  border: 5px;
+}
+td
+{
+  border: 10px;
+}
+h3
+{
+  text-align: center;
+}
+h4
+{
+  border-top: 140px solid greenyellow;
+  margin-left: 134px;
+  margin-top: -60px;
+  margin-right: 78px;
+}
+body:
+{
+  background: #F5EFFF;
+}

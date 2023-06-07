@@ -1,0 +1,33 @@
+header
+{
+	color: #EDE6F2;
+	margin-bottom: 80px;
+	font-size: 20px;
+}
+body
+{
+	text-align: center;
+	background: #6C809A;
+	color: #EDE6F2;
+	margin-bottom: 80px;
+	font-size: 20px;
+}
+p
+{
+	text-align: left;
+	margin-left: 500px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+table
+{
+	border: 1px solid white
+}
+td
+{
+	border: 1px solid white
+}
+footer
+{
+	margin-top: 100px;
+}
