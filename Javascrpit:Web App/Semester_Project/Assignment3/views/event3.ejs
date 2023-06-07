@@ -1,0 +1,82 @@
+<!--This is the new event form, originally event3 in my static web pages, so kept it for consistency-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      New Event
+    </title>
+    <link href = "/css/styles.css" rel = "stylesheet">
+
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs')%>
+    <main>
+      <h1 id = "signin">
+        Create An Event Here
+      </h1>
+
+      <!--Old Dropdown menu-->
+
+      <!--<div class = "dropdown">
+        <button class = "dropt"> Category</button>
+        <div class = "dropdown-content">
+          <a href = "#">Sports</a>
+          <a href = "#">Study</a>
+          <a href = "#">Party</a>
+          <a href = "#">Tarpy Foundation</a>
+          <a href = "#">Other</a>
+        </div>
+      </div><br><br>
+    -->
+    <!--This form gets the post request to allow the new event to go through, refernced mod 5 adn 6 videos for this-->
+        <form action = '/events' method = 'POST' class="new-form" id = "newEvent">
+          <p id = "c">Category:</p>
+          <select name = "category" id = "category" required>
+            <option value = "Sports">Sports <img src = "/images/TarpyCorp.jpg"></option>
+            <option value = "Study">Study</option>
+            <option value = "Party">Party</option>
+            <option value = "Tarpy">Tarpy Foundation</option>
+            <option value = "Other">Other</option>
+          </select> <br><br><br>
+
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title" required><br><br><br>
+
+        <label for="description">Description</label><br>
+        <textarea rows="5" id="description" name="description" class = "fixed-width" required minlength="10"></textarea><br><br><br>
+
+        <label for="location">Location</label><br>
+        <input type="text" id="location" name="location" required><br><br><br>
+
+        <label for="host">Host</label><br>
+        <input type="text" id="host" name="host" required><br><br><br>
+
+        <label for="startDate">Start Date</label><br>
+        <input type="datetime-local" id="start" name="startDate" required><br><br><br>
+
+        <label for="endDate">End Date</label><br>
+        <input type = "datetime-local" id = "end" name = "endDate" required><br><br><br>
+
+        <label for = "img">Select Image:</label>
+        <input type = "file" id = "img" name = "img" accept = "image/*">
+        
+
+        <!--Old placeholders-->
+      <!--
+      <input type = "text" id = "Title" name = "Title" placeholder = "Title"><br><br>
+      <input type = "text" id = "Details" name = "Details" placeholder = "Detials"><br><br>
+      <input type = "text" id = "Location" name = "Location" placeholder = "Location"><br><br>
+      <input type = "date" id = "Start" name = "Start date"><br>
+      <input type = "date" id = "End" name = "End date"><br><br><br>
+      -->
+      <button id = "Submit">Submit</button>
+      </form>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+
+</html>

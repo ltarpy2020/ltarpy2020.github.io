@@ -1,0 +1,10 @@
+<!--This displays a simple error message-->
+<link href = "/css/styles.css" rel = "stylesheet">
+<%- include('./partials/header.ejs')%>
+
+<div class = "content">
+    <h3><%= error.status%> Error</h3>
+    <p><%= error.message%></p>
+</div>
+
+<%- include('./partials/footer.ejs')%>

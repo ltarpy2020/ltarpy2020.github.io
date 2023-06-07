@@ -1,0 +1,34 @@
+<header>
+  <link href = "/css/styles.css" rel = "stylesheet">
+  <div id = "pages">
+    <a href = "/"> Homepage   || </a>
+    <%if(!user) {%>
+    <a href = "/users/login/">Sign In || </a>
+    <a href = "/users/new/">Sign Up || </a>
+    <a href = "/users/guest/">Guest</a>
+    <%} else {%>
+    <a href = "/events/">Events  || </a>
+    <a href = "/events/new/">Create Events || </a>
+    <a href = "/users/profile/"><%= user.firstName%>'s Profile || </a>
+    <a href = "/users/logout/">Logout</a>
+    <%}%>
+  </div>
+  <div id = "Logo"><a href = "/"><img src = "/images/TarpyCorp.jpg" alt = "A Logo"></div></a>
+</header>
+
+<% if(errorMessages.length > 0) {%>
+  <% errorMessages.forEach(message=>{%>
+      <div class='error'>
+          <%=message%>
+      </div>
+      <%});%>
+          <%}%>
+
+              <% if(successMessages.length > 0) {%>
+
+                  <% successMessages.forEach(message=>{%>
+                      <div class='success'>
+                          <%=message%>
+                      </div>
+                      <%});%>
+                          <%}%>

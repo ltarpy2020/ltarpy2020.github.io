@@ -1,0 +1,56 @@
+<!--This is the event page, allows users to see what events there are, see what they created, updated, or deleted as well-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      See Events Here
+    </title>
+    <link href = "/css/styles.css" rel = "stylesheet">
+
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs')%>
+    <main>
+    <h1 id = "otherH1">
+        See our events here
+    </h1>
+
+    <!--Needs an if statement to see other events users created or deleted-->
+      <!--<div id = "s">-->
+        <%if(events.length) {%>
+          <p id = "q">Select a event</p>
+          <%events.forEach(events => {%>
+            <%if (events.category === 'Sports') {%>
+            
+            <div id = "spid"><%=events.category%><a href = "/events/<%= events.id%>"> <p id = "sp"><%=events.title%></p><br></a></div>
+          <%}%>
+          <%if (events.category === 'Study') {%>
+            
+            <div id = "tpid"><%=events.category%><a href = "/events/<%= events.id%>"> <p id = "tp"><%=events.title%></p><br></a></div>
+          <%}%>
+          <%if (events.category === 'Party') {%>
+            
+            <div id = "ppid"><%=events.category%><a href = "/events/<%= events.id%>"> <p id = "pp"><%=events.title%></p><br></a></div>
+          <%}%>
+          <%if (events.category === 'Tarpy') {%>
+            
+            <div id = "ttid"><%=events.category%><a href = "/events/<%= events.id%>"> <p id = "tt"><%=events.title%></p><br></a></div>
+          <%}%>
+          <%if (events.category === 'Other') {%>
+            
+            <div id = "opid"><%=events.category%><a href = "/events/<%= events.id%>"> <p id = "op"><%=events.title%></p><br></a></div>
+          <%}%>
+          <% });
+          } else {%>
+              <p>There are no events to display</p>
+          <%}%>
+    <!--</div>-->
+    </main>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+
+</html>

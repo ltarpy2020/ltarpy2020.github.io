@@ -1,0 +1,154 @@
+const model = require('../models/story');
+exports.index = (req, res, next)=>{
+    //res.send('send all stories');
+    let stories = model.find()
+    .then(stories =>res.render('./story/index', {stories}))
+    .catch(err=> next(err));
+};
+
+exports.new = (req, res)=>{
+    res.render('./story/new');
+};
+
+exports.create = (req, res, next)=>{
+    //res.send('Created a new story');
+    let story = new model(req.body);//create a new story doc
+    story.save()
+    .then((story) => res.redirect('/stories'))
+    .catch(err=>
+        {
+            if (err.name === 'ValidationError')
+            {
+                err.status = 400;
+            }
+            next(err);
+        });
+};
+
+exports.show = (req, res, next)=>{
+    let id = req.params.id;
+    if(!id.match(/^[09a-fA-F]{24}$/))
+    {
+        let err = new Error('Invalid story ID');
+        err.status = 400;
+        return next(err);
+    }
+    let story = model.findById(id)
+    .then(story =>
+        {
+            if(story)
+            {
+                return res.render('./story/show', {story});
+            }
+            else
+            {
+                let err = new Error('Cannot find a story with id ' + id);
+                err.status = 404;
+                next(err);
+            }
+        })
+    .catch(err=>next(err));
+};
+
+exports.edit = (req, res, next)=>{
+    let id = req.params.id;
+
+    if(!id.match(/^[09a-fA-F]{24}$/))
+    {
+        let err = new Error('Invalid story ID');
+        err.status = 400;
+        return next(err);
+    }
+    let story = model.findById(id)
+    .then(story =>
+        {
+            if(story)
+            {
+                return res.render('./story/edit', {story});
+            }
+            else
+            {
+                let err = new Error('Cannot find a story with id ' + id);
+                err.status = 404;
+                next(err);
+            }
+        })
+    .catch(err=>next(err));
+};
+
+exports.update = (req, res, next)=>{
+    let story = req.body;
+    let id = req.params.id;
+
+    if(!id.match(/^[09a-fA-F]{24}$/))
+    {
+        let err = new Error('Invalid story ID');
+        err.status = 400;
+        return next(err);
+    }
+
+    model.findByIdAndUpdate(id, story, {useFindAndModify: false, runValidators: true})
+    .then(story =>
+        {
+            if(story)
+            {
+                res.redirect('/stories/'+id);
+            }
+            else
+            {
+                let err = new Error('Cannot find a story with id ' + id);
+                err.status = 404;
+                next(err);
+            }
+        })
+    .catch(err=>
+        { 
+            if (err.name === 'ValidationError')
+            {
+                err.status = 400;
+            }
+            next(err)
+        });
+};
+
+exports.delete = (req, res, next)=>{
+    let id = req.params.id;
+
+    if(!id.match(/^[09a-fA-F]{24}$/))
+    {
+        let err = new Error('Invalid story ID');
+        err.status = 400;
+        return next(err);
+    }
+
+    model.findByIdAndDelete(id, {useFindAndModify: false})
+    .then(story =>
+        {
+            if(story)
+            {
+                res.redirect('/stories');
+            }
+            else
+            {
+                let err = new Error('Cannot find a story with id ' + id);
+                err.status = 404;
+                next(err);
+            }
+        })
+    .catch(err=>
+        { 
+            if (err.name === 'ValidationError')
+            {
+                err.status = 400;
+            }
+            next(err)
+        });
+
+    if(model.deleteById(id))
+        res.redirect('/stories');
+    else {
+        let err = new Error('Cannot find a story with id ' + id);
+        err.status = 404;
+        next(err);
+    }
+};

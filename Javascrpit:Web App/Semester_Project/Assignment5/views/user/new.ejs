@@ -1,0 +1,27 @@
+<!--This is where we get our new users-->
+<title>
+        Sign up Here
+</title>
+<%- include('../partials/header.ejs')%>
+<h3 id = "userinfo">Please enter your user info</h3>
+    <form action = '/users' method = 'POST' class="user-form">
+            <label for="firstName" id = "em">First Name</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+            
+            <label for="lastName" id = "em">Last Name</label></td>
+            <input type="text" id="lastName" name="lastName" required></td><br>
+           
+            <label for="email" id = "em">Email Address</label>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="password" id = "em">Password</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength = "64" required><br>
+
+            <input type="submit" value="Sign Up" id = "signup">      
+    </form>
+    <p id = "note">Note: New password must be 8 characters long</p>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>
+
+

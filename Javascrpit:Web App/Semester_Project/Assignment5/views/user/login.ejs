@@ -1,0 +1,20 @@
+<!--This is where the users can login-->
+<title>
+    Sign in Here
+</title>
+<%- include('../partials/header.ejs')%>
+<h2 id = "signinthing">You can sign in here: </h2>
+    <form action = '/users/login' method = 'POST' class="user-form">
+        <label for="email" id = "em">Email Address</label></td>
+        <input type="email" id="email" name="email" required></td><br>
+           
+        <label for="password" id = "passw">Password</label>
+        <input type="password" id="password" name="password" minlength = "8" maxlength = "64" required><br>
+           
+        <input type="submit" value="Login" id = "login">     
+    </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>
+
+

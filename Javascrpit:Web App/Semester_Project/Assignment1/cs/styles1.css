@@ -1,0 +1,88 @@
+body
+{
+    background-color: #F6AA1C;
+}
+h1
+{
+    text-align: center;
+}
+header
+{
+    padding: 3%;
+    background-color: #621708;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: -17px;
+    left: -17px;
+}
+#pages
+{
+    position: absolute;
+    left: 75%;
+    font-size: 20px;
+    padding-top: 3%;
+    
+}
+a:visited
+{
+    color: white;
+}
+a:link
+{
+    color: yellow;
+}
+#sports
+{
+    padding-top: 50px;
+    font-size: 22px;
+    padding-bottom: 75px;
+    width: 30%;
+    background-color: #941B0C;
+    color: aquamarine;
+}
+li
+{
+    padding-top: 10px;
+}
+#sporting
+{
+    padding-top: 80px;
+}
+#stud
+{
+    text-align: right;
+    margin-left: 68%;
+    margin-top: -250px;
+    background-color: #941B0C;
+    font-size: 22px;
+    color: aquamarine;
+    padding-bottom: 75px;
+    padding-top: 50px;
+}
+#Logo img
+{
+    padding-top: 30px;
+    width: 10%;
+    height: 10%;
+    position: relative;
+}
+footer
+{
+    background-color: #220901;
+    color: white;
+    margin-top: 10%;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 50px;
+    font: 18px;
+}
+
+/*
+Possible Colors scheme:
+#220901
+#621708
+#941B0C
+#BC3908
+#F6AA1C
+*/

@@ -1,0 +1,33 @@
+<!--This is where we can see our profile once an account is made-->
+<title>
+    Profile Page
+</title>
+<link href = "/css/styles.css" rel = "stylesheet">
+
+<%- include('../partials/header.ejs')%>
+    <h2>Welcome, <%=user.firstName%></h2>
+
+    <%if(Event.length) {%>
+        <p id = "reroute">You have created the following events</p>
+        <%events.forEach(Event => {%>
+            <a href = '/events/<%= events.id%>'><p id = "reroute"><%=events.title%></p></a>
+        <%});
+    } else {%>
+        <p id = "reroute">You have not created any events</p>
+    <%}%>
+
+    
+    <%if(events.rsvp) {%>
+        <p id = "reroute">Here are the events that guests that made RSVPs for</p>
+        <%events.forEach(events => {%>
+            <p id = "reroute"><%=event.title%></p>
+        <%});
+    } else {%>
+        <p id = "reroute">Guests made no RSVPs</p>
+    <%}%>
+
+    <div id = "reroute">
+        <a href = "/events/" id = "reroute">Click Here to see other events</a>
+    </div>
+
+<%- include('../partials/footer.ejs')%>

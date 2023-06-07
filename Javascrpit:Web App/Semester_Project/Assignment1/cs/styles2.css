@@ -1,0 +1,89 @@
+body
+{
+    background-color: #C2AFF0;
+}
+h1
+{
+    text-align: center;
+    padding-bottom: 50px;
+}
+header
+{
+    padding: 3%;
+    background-color: #457EAC;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: -17px;
+    left: -17px;
+}
+#pages
+{
+    position: absolute;
+    left: 75%;
+    font-size: 20px;
+    padding-top: 3%;
+    
+}
+p
+{
+    font-size: 18px;
+    margin-left: 32%;
+    position: absolute;
+    background-color: #9191E9;
+}
+a:visited
+{
+    color: white;
+}
+a:link
+{
+    color: yellow;
+}
+#Logo img
+{
+    padding-top: 30px;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    padding-left: 30px;
+}
+footer
+{
+    background-color: #2D5D7B;
+    color: white;
+    margin-top: 15%;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 50px;
+    font: 18px;
+}
+#Delete
+{
+    background-color: #2D5D7B;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+}
+#Edit
+{
+    margin-top: 15%;
+    margin-left: 32%;
+    background-color: #2D5D7B;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+}
+
+/**
+Color scheme:
+#686868
+#C2AFF0
+#9191E9
+#457EAC
+#2D5D7B
+**/

@@ -1,0 +1,16 @@
+<!--This is our guest page, where users who don't have an account can access events to see if they want to attend-->
+<link href = "/css/styles.css" rel = "stylesheet">
+<title>
+    Guest Page
+</title>
+
+<%- include('../partials/header.ejs')%>
+    <h2>Welcome, Guest</h2>
+    <p id = "guestEve">Welcome to our guest page, please click below to check events or make RSVP</p><br>
+    <p><%Event.title%></p>
+
+    <div id = "reroute">
+        <a href = "/events/" id = "reroute">Click Here to see the events</a>
+    </div>
+
+<%- include('../partials/footer.ejs')%>

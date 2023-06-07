@@ -1,0 +1,40 @@
+<!--This is where the edit would direct you to, this allows a POST method as referenced by the videos
+This will also store elements from the events array-->
+<link href = "/css/styles.css" rel = "stylesheet">
+
+<%- include('./partials/header.ejs')%>
+
+<div id = "editDiv">
+<form method = "POST" action = "/events/<%= events.id%>?_method=PUT" class="new-form">
+        <select name = "category" id = "category" required>
+          <option value = "Sports">Sports <img src = "/images/TarpyCorp.jpg"></option>
+          <option value = "Study">Study</option>
+          <option value = "Party">Party</option>
+          <option value = "Tarpy">Tarpy Foundation</option>
+          <option value = "Other">Other</option>
+        </select> <br><br><br>
+
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" value = "<%= events.title%>" required><br><br><br><br>
+
+    <label for="description">Description</label>
+    <textarea rows="5" id="description" name="description" class = "fixed-width" required><%= events.description%></textarea><br><br><br><br>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" value = "<%= events.location%>" required minlength="10"><br><br><br><br>
+
+    <label for="host">Host</label>
+    <input type="text" id="host" name="host" value = "<%= events.host%>" required><br><br><br><br>
+
+    <label for="startDate">Start Date</label>
+    <input type="datetime-local" id="startDate" name="startDate" value = '<%events.startDate%>' required><br><br><br><br>
+
+    <label for="endDate">End Date</label>
+    <input type="datetime-local" id="endDate" name="endDate" value = '<%events.endDate%>' required><br><br><br><br>
+
+    <label for = "img">Select Image:</label>
+    <input type = "file" id = "img" name = "img" accept = "image/*"><br><br><br><br>
+
+    <input type="submit" value="Submit">
+</div>
+<%- include('./partials/footer.ejs')%>

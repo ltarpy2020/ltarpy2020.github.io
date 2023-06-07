@@ -1,0 +1,11 @@
+<!--This is where we can see our profile once an account is made-->
+<link href = "/css/styles.css" rel = "stylesheet">
+
+<%- include('../partials/header.ejs')%>
+    <h2>Welcome, <%=user.firstName%></h2>
+
+    <div id = "reroute">
+        <a href = "/events/" id = "reroute">Click Here to see your events</a>
+    </div>
+
+<%- include('../partials/footer.ejs')%>

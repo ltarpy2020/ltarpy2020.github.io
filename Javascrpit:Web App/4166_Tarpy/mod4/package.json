@@ -1,0 +1,15 @@
+{
+  "name": "4166_tarpy",
+  "version": "1.0.0",
+  "description": "A simple express app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liam Tarpy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}

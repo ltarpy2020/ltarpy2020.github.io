@@ -1,0 +1,39 @@
+<!--This is where the RSVP form is-->
+
+<link href = "/css/styles.css" rel = "stylesheet">
+
+
+<%- include('./partials/header.ejs')%>
+<%if(user) {%>
+    <h2>Welcome, Admin to <%= events.title %></h2>
+    <%}%>
+    <%if(!user) {%>
+        <h2>Welcome, Guest to <%= events.title %></h2>
+    <%}%>
+    
+
+     <%if('rsvpbut' === 1) {%>
+    <div id = "rsvpCheckYes">
+        <a id = "rsvpText">Thank you for RSVP: Yes</a>
+    </div>
+    <%}%>
+    <%if ('rsvpbut' === -1) {%>
+        <div id = "rsvpCheckNo">
+            <a id = "rsvpText">Thank you for RSVP: No</a>
+        </div>
+        <%}%>
+    <%if ('rsvpbut' === 0) {%>
+        <div id = "rsvpCheckMaybe">
+            <a id = "rsvpText">Thank you for RSVP: Maybe</a>
+        </div>
+    <%} else {%>
+        <div id = "rsvpText">
+            <a id = "rsvpText">There are no RSVPs</a>
+        </div>
+    <%}%>
+
+    <div id = "rsvpRe"><a href = "/users/guest"> <p id = "rsvpReP">Return to Guest Page</p><br></a>
+        
+
+
+<%- include('./partials/footer.ejs')%>

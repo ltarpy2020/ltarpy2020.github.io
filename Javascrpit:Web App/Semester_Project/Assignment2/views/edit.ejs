@@ -1,0 +1,21 @@
+<!--This is where the edit would direct you to, this allows a POST method as referenced by the videos
+This will also store elements from the events array-->
+<link href = "/css/styles.css" rel = "stylesheet">
+
+<form method = "POST" action = "/events/<%= events.id%>?_method=PUT" class="new-form">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" value = "<%= events.title%>">
+
+    <label for="description">Description</label>
+    <textarea rows="5" id="description" name="description" class = "fixed-width"><%= events.description%></textarea>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" value = "<%= events.location%>">
+
+    <label for = "startDate">Start Date</label>
+    <input type = "date" id = "Start" name = "Start date" value = "<%= events.startDate%>"><br>
+
+    <label for = "endDate">End Date</label>
+    <input type = "date" id = "End" name = "End date" value = "<%= events.endDate%>"><br><br><br>
+
+    <input type="submit" value="Submit">

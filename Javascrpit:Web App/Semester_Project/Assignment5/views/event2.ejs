@@ -1,0 +1,59 @@
+<!--This is where the event details are-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      Event Details
+    </title>
+    <link href = "/css/styles.css" rel = "stylesheet">
+
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs')%>
+        <h1>
+            Event Details
+        </h1>
+    <main>
+
+      <!--This refrences the events array in the events.ejs page, and displays them here-->
+      <div class = "content" id = "x">
+          <h3><%= events.category%></h3>
+          <h4><%= events.title%></h4>
+          <h4>Location: <%= events.location%></h4>
+          <div id = "h">Host: <%=events.host%></div><br>
+          <div id = "e">Details: <%=events.description%></div><br>
+          <div id = "rsss">RSVP: <%= events.rsvp%></div><br>
+          <div id = "starting">Start Date: <%= events.startDate%></div>
+          <div id = "ending">End Date: <%= events.endDate%></div>
+          <div id = "im"><%= events.img%></div>
+      </div>
+      <form>
+      <%if(user) {%>
+      <button type = "submit" formmethod = "GET" formaction = "/events/<%= events.id%>/edit" id = "Edit">
+        Edit
+    </button>
+    <button type = "submit" formmethod = "POSt" formaction = "/events/<%= events.id%>?_method=DELETE" id = "Delete">
+      Delete
+  </button>
+  <%}%>
+   <%if(!user) {%>
+    <button type = "submit" formmethod = "post" formaction = "/events/<%= events.id%>/rsvp" id = "yesbut" name = "rsvpbut" value = 1>
+      Yes
+    </button>
+    <button type = "submit" formmethod = "post" formaction = "/events/<%= events.id%>/rsvp" id = "nobut" name = "rsvpbut" value = -1>
+      No
+    </button>
+    <button type = "submit" formmethod = "post" formaction = "/events/<%= events.id%>/rsvp" id = "maybebut" name = "rsvpbut" value = 0>
+      Maybe
+    </button>
+  <%}%>
+    </form>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+  </body>
+
+</html>
