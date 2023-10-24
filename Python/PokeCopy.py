@@ -10,11 +10,15 @@ for x in range(10):
     if z == 1:
         print ("This is fire")
         if oppo == 3:
+            print("Opponent has grass\n")
             me += 1
             o -= 1
         elif oppo == 2:
+            print("Opponent has water\n")
             me -= 1
             o += 1
+        else:
+            print ("Opponent has fire\n")
     elif z == 2:
         print("This is water")
         if oppo == 1:
@@ -26,6 +30,7 @@ for x in range(10):
     elif z == 3:
         print("This is grass")
         if oppo == 2:
+            print("This is water")
             me += 1
             o -= 1
         elif oppo == 1:
