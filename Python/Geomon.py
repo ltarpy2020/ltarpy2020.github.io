@@ -2,76 +2,146 @@
 import random
 
 me = o = 0
+element = e = ""
 
 for x in range(10):
     z = random.randint(1, 12)
     oppo = random.randint(1, 12)
 
     if z == 1:
-        print ("This is fire")
-        if oppo == 1:
-            print ("Opponent has fire\n")
-        elif oppo == 2:
-            print("Opponent has water\n")
+        element = "This is fire"
+        if oppo == 2:
             me -= 1
             o += 1
-        if oppo == 3:
-            print("Opponent has grass\n")
+        if oppo == 12:
             me += 1
             o -= 1
 
     elif z == 2:
-        print("This is water")
+        element = "This is water"
+        if oppo == 3:
+            me -= 1
+            o += 1
         if oppo == 1:
-            print ("Opponent has fire\n")
             me += 1
             o -= 1
-        elif oppo == 2:
-            print("Opponent has water\n")
-        elif oppo == 3:
-            print("Opponent has grass\n")
-            me -= 1
-            o += 1
 
     elif z == 3:
-        print("This is grass")
-        if oppo == 1:
-            print ("Opponent has fire\n")
+        element = "This is plant"
+        if oppo == 11:
             me -= 1
             o += 1
-        elif oppo == 2:
-            print("Opponent has water\n")
-            me -= 1
-            o += 1
-        elif oppo == 3:
-            print("Opponent has grass\n")
+        if oppo == 2:
+            me += 1
+            o -= 1
             
     elif z == 4:
-        print("This is electricity")
+        element = "This is electric"
+        if oppo == 5:
+            me -= 1
+            o += 1
+        if oppo == 11:
+            me += 1
+            o -= 1
         
     elif z == 5:
-        print("This is ground")
+        element = "This is ground"
+        if oppo == 10:
+            me -= 1
+            o += 1
+        if oppo == 4:
+            me += 1
+            o -= 1
     
     elif z == 6:
-        print("This is shadow")
+        element = "This is shadow"
+        if oppo == 7:
+            me -= 1
+            o += 1
+        if oppo == 9:
+            me += 1
+            o -= 1
     
     elif z == 7:
-        print("This is light")
+        element = "This is light"
+        if oppo == 12:
+            me -= 1
+            o += 1
+        if oppo == 6:
+            me += 1
+            o -= 1
     
     elif z == 8:
-        print("This is physical")
+        element = "This is physical"
+        if oppo == 9:
+            me -= 1
+            o += 1
+        if oppo == 10:
+            me += 1
+            o -= 1
         
     elif z == 9:
-        print("This is mind")
+        element = "This is mind"
+        if oppo == 8:
+            me -= 1
+            o += 1
+        if oppo == 6:
+            me += 1
+            o -= 1
     
     elif z == 10:
-        print("This is ice")
+        element = "This is ice"
+        if oppo == 8:
+            me -= 1
+            o += 1
+        if oppo == 5:
+            me += 1
+            o -= 1
         
     elif z == 11:
-        print("This is air")
+        element = "This is air"
+        if oppo == 4:
+            me -= 1
+            o += 1
+        if oppo == 3:
+            me += 1
+            o -= 1
         
     elif z == 12:
-        print("This is toxic")
+        element = "This is toxic"
+        if oppo == 1:
+            me -= 1
+            o += 1
+        if oppo == 7:
+            me += 1
+            o -= 1
+            
+    if oppo == 1:
+        e = "Opponent has fire"
+    elif oppo == 2:
+        e = "Opponent has water"
+    elif oppo == 3:
+        e = "Opponent has plant"
+    elif oppo == 4:
+        e = "Opponent has electric"
+    elif oppo == 5:
+        e = "Opponent has ground"
+    elif oppo == 6:
+        e = "Opponent has shadow"
+    elif oppo == 7:
+        e = "Opponent has light"
+    elif oppo == 8:
+        e = "Opponent has physical"
+    elif oppo == 9:
+        e = "Opponent has mind"
+    elif oppo == 10:
+        e = "Opponent has ice"
+    elif oppo == 11:
+        e = "Opponent has air"
+    elif oppo == 12:
+        e = "Opponent has toxic"
+    
+    print(element + "\n" + e + "\n")
 
 
 if me > o:
