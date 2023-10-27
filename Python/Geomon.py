@@ -6,7 +6,35 @@ element = e = ""
 for x in range(10):
     z = random.randint(1, 12)
     oppo = random.randint(1, 12)
-    jewel = random.randint(1, 100)
+    jewel = random.randint(1, 50)
+    rock = ""
+    
+    if 1 <= jewel <= 38:
+        rock = "Quartz"
+    elif jewel == 39:
+        rock = "Ruby"
+    elif jewel == 40:
+        rock = "Sapphire"
+    elif jewel == 41:
+        rock = "Emerald"
+    elif jewel == 42:
+        rock = "Topaz"
+    elif jewel == 43:
+        rock = "Garnet"
+    elif jewel == 44:
+        rock = "Tourmaline"
+    elif jewel == 45:
+        rock = "Opal"
+    elif jewel == 46:
+        rock = "Tigers Eye"
+    elif jewel == 47:
+        rock = "Amethyst"
+    elif jewel == 48:
+        rock = "Aquamarine"
+    elif jewel == 49:
+        rock = "Citrene"
+    elif jewel == 50:
+        rock = "Peridot"
 
     if z == 1:
         element = "This is fire"
@@ -16,7 +44,7 @@ for x in range(10):
         if oppo == 12:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
 
     elif z == 2:
         element = "This is water"
@@ -26,7 +54,7 @@ for x in range(10):
         if oppo == 1:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
 
     elif z == 3:
         element = "This is plant"
@@ -36,7 +64,7 @@ for x in range(10):
         if oppo == 2:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
             
     elif z == 4:
         element = "This is electric"
@@ -46,7 +74,7 @@ for x in range(10):
         if oppo == 11:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
         
     elif z == 5:
         element = "This is ground"
@@ -56,7 +84,7 @@ for x in range(10):
         if oppo == 4:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
     
     elif z == 6:
         element = "This is shadow"
@@ -66,7 +94,7 @@ for x in range(10):
         if oppo == 9:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
     
     elif z == 7:
         element = "This is light"
@@ -76,7 +104,7 @@ for x in range(10):
         if oppo == 6:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
     
     elif z == 8:
         element = "This is physical"
@@ -86,7 +114,7 @@ for x in range(10):
         if oppo == 10:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
         
     elif z == 9:
         element = "This is mind"
@@ -96,7 +124,7 @@ for x in range(10):
         if oppo == 6:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
     
     elif z == 10:
         element = "This is ice"
@@ -106,7 +134,7 @@ for x in range(10):
         if oppo == 5:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
         
     elif z == 11:
         element = "This is air"
@@ -116,7 +144,7 @@ for x in range(10):
         if oppo == 3:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
         
     elif z == 12:
         element = "This is toxic"
@@ -126,7 +154,7 @@ for x in range(10):
         if oppo == 7:
             me += 1
             o -= 1
-            print(jewel)
+            print(rock)
             
     if oppo == 1:
         e = "Opponent has fire"
