@@ -2,6 +2,7 @@ import random
 
 me = o = 0
 element = e = ""
+caputre = 0
     
 for x in range(10):
     z = random.randint(1, 12)
@@ -9,8 +10,6 @@ for x in range(10):
     jewel = random.randint(1, 50)
     chance = random.randint(1, 100)
     rock = ""
-    choice = input("Would you like to play a game")
-    if choice == 'y':
             
         if 1 <= jewel <= 38:
             rock = "Quartz"
@@ -47,7 +46,16 @@ for x in range(10):
             if oppo == 12:
                 me += 1
                 o -= 1
-                print(rock)
+                if rock = "Quartz" and chance >= 35:
+                    print("Congrats on the capture")
+                    capture += 1
+                elif rock = "Peridot":
+                    print("Congrats on the capture")
+                    capture += 1
+            else:
+                if rock = "Quartz" and chance >= 35:
+                    print("Congrats on the capture")
+                    capture += 1
     
         elif z == 2:
             element = "This is water"
@@ -185,9 +193,6 @@ for x in range(10):
             e = "Opponent has toxic"
         
         print(element + "\n" + e + "\n")
-        
-    else:
-        break;
 
 
 if me > o:
