@@ -324,4 +324,5 @@ elif me == o:
     print('You tie')
 else:
     print('You lose')
+print('Caputre: ' + str(capture))
 print(me, o)
