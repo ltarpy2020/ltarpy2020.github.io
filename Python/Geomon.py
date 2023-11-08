@@ -236,6 +236,17 @@ for x in range(10):
             me += 1
             o -= 1
             print(rock)
+            if rock == "Quartz" and chance >= 35:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock != "Quartz" and jewel != 43 and chance >= 15:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock == "Garnet":
+                print("Congrats on the capture")
+                capture += 1
+            else:
+                print("You did not capture")
         
     elif z == 11:
         element = "This is air"
@@ -246,6 +257,17 @@ for x in range(10):
             me += 1
             o -= 1
             print(rock)
+            if rock == "Quartz" and chance >= 35:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock != "Quartz" and jewel != 41 and chance >= 15:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock == "Emerald":
+                print("Congrats on the capture")
+                capture += 1
+            else:
+                print("You did not capture")
         
     elif z == 12:
         element = "This is toxic"
@@ -256,6 +278,17 @@ for x in range(10):
             me += 1
             o -= 1
             print(rock)
+            if rock == "Quartz" and chance >= 35:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock != "Quartz" and jewel != 45 and chance >= 15:
+                print("Congrats on the capture")
+                capture += 1
+            elif rock == "Opal":
+                print("Congrats on the capture")
+                capture += 1
+            else:
+                print("You did not capture")
             
     if oppo == 1:
         e = "Opponent has fire"
