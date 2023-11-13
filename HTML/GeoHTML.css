@@ -1,6 +1,6 @@
 body{
   padding: 25px;
-  background: grey;
+  background: #DDD0C5;
 }
 .title {
 	color: #5C6AC4;
@@ -10,4 +10,18 @@ body{
 {
   color: red;
   text-align: center;
+}
+.dropdown1
+{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+}
+.dropdown1:hover .dropdown-content
+{
+  display: block;
 }
