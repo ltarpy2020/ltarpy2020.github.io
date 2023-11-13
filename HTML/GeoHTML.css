@@ -1,0 +1,13 @@
+body{
+  padding: 25px;
+  background: grey;
+}
+.title {
+	color: #5C6AC4;
+	font-family: Arial;
+}
+#GeoInfo
+{
+  color: red;
+  text-align: center;
+}
