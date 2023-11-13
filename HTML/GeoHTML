@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geomon TestApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title" id "frontPage">Geomon Front Page </h1>
+      <p id = "GeoInfo">This will give us some info on the python app I am making</p>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html>
