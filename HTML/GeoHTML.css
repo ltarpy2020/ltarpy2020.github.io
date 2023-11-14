@@ -1,10 +1,12 @@
 body{
   padding: 25px;
-  background: #DDD0C5;
+  background: #78BBCB;
 }
 .title {
-	color: #5C6AC4;
+	color: #4C0F42;
 	font-family: Arial;
+	font-size: 21px;
+	padding-left: 5%;
 }
 
 #GeoInfo
@@ -41,7 +43,7 @@ body{
   display: block;
 }
 
-#dropdown-content a:hover 
+#dropdown-content a:hover
 {
   background-color: #ddd;
 }
