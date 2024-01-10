@@ -1,0 +1,22 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+#but
+{
+  position: relative;
+  bottom: 5%;
+  right: 10%;
+}
+#response
+{
+  position: relative;
+  left: 80%;
+}
+#num
+{
+  position: relative;
+  padding-bottom: 40px;
+}
